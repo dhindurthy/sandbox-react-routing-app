@@ -52,6 +52,17 @@ function App() {
           />
 
           <Route path="/books" component={Books} />
+          <Route
+            path="/"
+            exact={true}
+            render={() => {
+              return (
+                <div className="jumbotron">
+                  <h1 className="display-3">Hello, from home page!</h1>
+                </div>
+              );
+            }}
+          />
         </div>
       </div>
     </Router>
