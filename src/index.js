@@ -34,7 +34,7 @@ function App() {
             render={() => {
               return (
                 <div className="jumbotron">
-                  <h1 className="display-3">Hello, world!</h1>
+                  <h1 className="display-3">Hello page!</h1>
                 </div>
               );
             }}
@@ -45,7 +45,7 @@ function App() {
             render={() => {
               return (
                 <div className="jumbotron">
-                  <h1 className="display-3">About It I know, yes!</h1>
+                  <h1 className="display-3">About page!</h1>
                 </div>
               );
             }}
@@ -58,7 +58,7 @@ function App() {
             render={() => {
               return (
                 <div className="jumbotron">
-                  <h1 className="display-3">Hello, from home page!</h1>
+                  <h1 className="display-3">Home page!</h1>
                 </div>
               );
             }}
