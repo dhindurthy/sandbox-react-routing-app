@@ -13,7 +13,6 @@ import "./styles.css";
 
 function App() {
   return (
-    // export default () => (
     <Router>
       <div className="App">
         <div className="container">
@@ -29,6 +28,7 @@ function App() {
             </li>
           </ul>
           <hr />
+
           <Route
             path="/hello"
             render={() => {
@@ -39,7 +39,6 @@ function App() {
               );
             }}
           />
-
           <Route
             path="/about"
             render={() => {
@@ -50,7 +49,6 @@ function App() {
               );
             }}
           />
-
           <Route path="/books" component={Books} />
           <Route
             path="/"
@@ -66,7 +64,6 @@ function App() {
         </div>
       </div>
     </Router>
-    // )
   );
 }
 
