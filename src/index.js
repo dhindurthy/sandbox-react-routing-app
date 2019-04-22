@@ -15,9 +15,9 @@ function App() {
         <section className="container">
           <header>
             <nav>
-              <ul class="nav-list">
+              <ul className="navigation nav-list">
                 <li>
-                  <Link to="/landing">#</Link>
+                  <Link to="/landing">DI</Link>
                 </li>
                 <li>
                   <Link to="/services">Services</Link>
@@ -34,30 +34,31 @@ function App() {
               </ul>
             </nav>
           </header>
-          <main class="restbody">
+          <main className="restbody">
             <Route path="/landing" component={Landing} />
             <Route path="/services" component={Services} />
             <Route path="/about" component={About} />
             <Route path="/codesamples" component={Codesamples} />
             <Route path="/contact" component={Contact} />
             <Route path="/" exact={true} component={Landing} />
-            {/* <Route
-            path="/"
-            exact={true}
-            render={() => {
-              return (
-                <h1 className="display-3">Home page!</h1>
-              );
-            }}
-          /> */}
           </main>
           <footer>
-            <ul class="footer-list">
-              <li>L</li>
-              <li>G</li>
-              <li>Gg</li>
-              <li>CS</li>
-              <li>CP</li>
+            <ul className="navigation footer-list">
+              <li>
+                <a href="https://www.w3schools.com">G</a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com">Gg</a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com">L</a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com">CS</a>
+              </li>
+              <li>
+                <a href="https://www.w3schools.com">CP</a>
+              </li>
             </ul>
           </footer>
         </section>
