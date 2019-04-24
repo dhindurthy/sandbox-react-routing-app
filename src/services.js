@@ -11,9 +11,18 @@ function Services(props) {
         same to a state where any kind of web content can be handled including
         retail, eductaional, financial, service provider websites. Skilled with
         over 7 years of experience in building, editing and optimizing websites.
-        Additionally, very passionate about making a website accessible and show
+        Additionally, very passionate about making a website accessible to show
         love and care for all users by providing extra help in case of
-        disabilities.
+        disabilities. Visit the{" "}
+        <a
+          className="inline-link"
+          href="https://linkedin.com/in/dhiraj-indurthy-43b747183"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          LinkedIn
+        </a>{" "}
+        profile for more details.
       </p>
       <section class="familiar-services-sections">
         <section>

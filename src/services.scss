@@ -1,3 +1,9 @@
+$heading-color: rgba(254, 74, 73, 1);
+$nav-color: rgba(254, 215, 102, 1);
+$text-color: rgba(0, 159, 183, 1);
+$body-background-1: rgba(230, 230, 234, 1);
+$body-background-2: rgba(244, 244, 248, 1);
+
 .services-page {
   display: flex;
   align-items: center;
@@ -7,8 +13,23 @@
   }
   p{
     text-align: center;
+    font-size:1.5em;
   }
-
+  a {
+    color: $text-color;
+    margin: 0;
+    // font-size:1.25em;
+  }
+  a:hover{
+    cursor: pointer;
+    color:$nav-color;
+    background-color: $heading-color;
+  }
+  a:focus{
+    color:$nav-color;
+    background-color: $heading-color;
+    outline: 1px solid  $nav-color  !important;
+  }
   .familiar-services-sections{
     display: flex;
     justify-content: space-around;
@@ -20,5 +41,13 @@
   }
   p, dl,ul {
     margin-top: 0;
+  }
+
+  dt, li {
+    font-size:1.25em;
+  }
+
+  dd {
+    font-size:1em;
   }
 }

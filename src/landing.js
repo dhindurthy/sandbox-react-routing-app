@@ -4,20 +4,14 @@ import { BrowserRouter as Route, Link } from "react-router-dom";
 function Landing(props) {
   return (
     <section className="landing-page">
-      <div className="jumbotron">
-        {/* <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud velit esse cillum dolore eu fugiat
-        </p> */}
+      {/* <div className="jumbotron">
         <img
           alt="put something"
           src={"./programming"}
-          // https://picsum.photos/200/300/?random
           className="landing-image"
         />
-        {/* or background image for .landing-page ,only for non-phone */}
-      </div>
+      </div> */}
+      <h1 className="landing-hello">Hello, I am Dhiraj Indurthy.</h1>
       <section className="quick-view-articles">
         <article className="mini-jumbotron">
           <p>

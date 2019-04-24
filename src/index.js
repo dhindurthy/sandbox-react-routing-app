@@ -50,28 +50,51 @@ function App() {
           <footer>
             <ul role="menubar" className="navigation footer-list">
               <li>
-                <a role="menuitem" href="https://www.w3schools.com">
-                  G
+                <a
+                  role="menuitem"
+                  href="https://github.com/dhindurthy"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  GitHub
                 </a>
               </li>
               <li>
-                <a role="menuitem" href="https://www.w3schools.com">
-                  Gg
+                <a
+                  role="menuitem"
+                  href="https://gist.github.com/dhindurthy"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Gist
+                </a>
+              </li>
+              {/* <li>
+                <a
+                  role="menuitem"
+                  href="https://linkedin.com/in/dhiraj-indurthy-43b747183"
+                >
+                  LinkedIn
+                </a>
+              </li> */}
+              <li>
+                <a
+                  role="menuitem"
+                  href="https://codesandbox.io/u/dhindurthy"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  CodeSandbox
                 </a>
               </li>
               <li>
-                <a role="menuitem" href="https://www.w3schools.com">
-                  L
-                </a>
-              </li>
-              <li>
-                <a role="menuitem" href="https://www.w3schools.com">
-                  CS
-                </a>
-              </li>
-              <li>
-                <a role="menuitem" href="https://www.w3schools.com">
-                  CP
+                <a
+                  role="menuitem"
+                  href="https://codepen.io/dhindurthy/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  CodePen
                 </a>
               </li>
             </ul>
