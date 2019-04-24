@@ -22,6 +22,7 @@ body{
   a{
     color:$nav-color;
     margin: 0.5rem;
+    // margin-right: 0;//exception to make the menu top smaller
     padding: 0.5rem;
   }
   a:hover{
@@ -38,17 +39,17 @@ body{
     color:$heading-color
   }
   ::selection {
-    // background: #ffb7b7; /* WebKit/Blink Browsers */
+    background: $nav-color; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
-    // background: #ffb7b7; /* Gecko Browsers */
+    background: $nav-color; /* Gecko Browsers */
   }
 }
 .container {
   display: grid;
   height: 100vh;
   grid-template-columns: 100%; 
-  grid-template-rows: 12.5% 75% 12.5% ;
+  grid-template-rows: 9% 82% 9% ;
   grid-template-areas: 
    "header header header header header"
    "main main main main main"
@@ -61,11 +62,13 @@ ul.navigation {
   display: flex;
   list-style: none;
   padding: 0;
+  padding-bottom: 0.25rem; //exception
   margin: 0;
   li {
     flex: 0 0 auto;
     a{
       text-decoration: none;
+      padding-bottom: 0.75rem;//exception
     }
   }
   background-color: $heading-color;
@@ -82,6 +85,8 @@ header {
 }
 main{
   grid-area: main;
+  display: flex;
+  align-items: center;
 }
 footer {
   grid-area: footer;
@@ -92,18 +97,35 @@ footer {
     justify-content: flex-start;  
   }
 }
+.landing-image{//or background image for .landing-page
+  height:100%;
+  width:100%;
+  //look at .jumbotron 
+  // height="300"
+  //         width="300"
+}
 .landing-page {
+  // background-image: url("https://picsum.photos/200/300/?random");
+  // background-repeat: no-repeat;
+  overflow-y: auto;
+  height: 97.5%;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  height: 90%;
   justify-content: space-around;
-  article {
+  .quick-view-articles{
+    display: flex;
+    // flex-flow: wrap;
+    justify-content: space-between;
+  }
+  article.mini-jumbotron {
     background-color:$heading-color;
     color: $body-background-1;
-    h1,h2,h3,h4,h5,h6 {
-      color:$body-background-1
-    }
+    // max-width: 45%;
+    // min-width: 25%;
+    // h1,h2,h3,h4,h5,h6 {
+    //   color:$body-background-1
+    // }
     a {
       color: $body-background-1;
       margin: 0;
@@ -121,29 +143,25 @@ footer {
     p {
       font-family: 'Caveat', cursive;
       font-size: 1.5rem;
+      // padding: 0;
+      margin: 0.25rem;
+    }
+    padding: 0.75rem;
+    // width: 30%;
+    margin: 1rem;
+    border-radius: 0.75rem;
+    h4,h5,h6{
+      padding: 0;
+      margin: 0;
     }
   }
   .jumbotron {
-    padding: 0.75rem;
-    border-radius: 0.75rem;
+    height: 65%; //should be image height 
     display: flex;
     align-items: center;
     justify-content: center;
     p{
       margin: 0;
-    }
-    img {
-      margin-right: 0.5rem;
-    }
-    line-height: 2
-  }
-  .quick-view-articles{
-    display: flex;
-    justify-content: space-between;
-    .mini-jumbotron {
-      padding: 0.75rem;
-      width: 30%;
-      border-radius: 0.75rem;
     }
   }
 }
@@ -157,10 +175,10 @@ footer {
     margin: 0.5rem;
   }
 }
-.services-page, .codesamples-page, .about-page, .contact-page {
-  overflow-y: scroll;
-  height: 100%;
-  padding: 0.5rem;
+.services-page, .codesamples-page, .contact-page {
+  overflow-y: auto;
+  height: 97.5%;
+  padding: 0.75rem;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 600
 }

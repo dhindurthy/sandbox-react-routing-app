@@ -3,10 +3,11 @@ import ReactDOM from "react-dom";
 import Contact from "./contact";
 import Landing from "./landing";
 import Services from "./services";
-import About from "./about";
 import Codesamples from "./codesamples";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./stlye.scss";
+import "./contact.scss";
+import "./services.scss";
 
 function App() {
   return (
@@ -15,49 +16,63 @@ function App() {
         <section className="container">
           <header>
             <nav>
-              <ul className="navigation nav-list">
+              <ul role="menubar" className="navigation nav-list">
                 <li>
-                  <Link to="/landing">DI</Link>
+                  <Link role="menuitem" to="/landing">
+                    di
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/services">Services</Link>
+                  <Link role="menuitem" to="/services">
+                    Work
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link role="menuitem" to="/codesamples">
+                    Code
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/codesamples">Codesamples</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link role="menuitem" to="/contact">
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </nav>
           </header>
-          <main className="restbody">
+          <main>
             <Route path="/landing" component={Landing} />
             <Route path="/services" component={Services} />
-            <Route path="/about" component={About} />
             <Route path="/codesamples" component={Codesamples} />
             <Route path="/contact" component={Contact} />
             <Route path="/" exact={true} component={Landing} />
           </main>
           <footer>
-            <ul className="navigation footer-list">
+            <ul role="menubar" className="navigation footer-list">
               <li>
-                <a href="https://www.w3schools.com">G</a>
+                <a role="menuitem" href="https://www.w3schools.com">
+                  G
+                </a>
               </li>
               <li>
-                <a href="https://www.w3schools.com">Gg</a>
+                <a role="menuitem" href="https://www.w3schools.com">
+                  Gg
+                </a>
               </li>
               <li>
-                <a href="https://www.w3schools.com">L</a>
+                <a role="menuitem" href="https://www.w3schools.com">
+                  L
+                </a>
               </li>
               <li>
-                <a href="https://www.w3schools.com">CS</a>
+                <a role="menuitem" href="https://www.w3schools.com">
+                  CS
+                </a>
               </li>
               <li>
-                <a href="https://www.w3schools.com">CP</a>
+                <a role="menuitem" href="https://www.w3schools.com">
+                  CP
+                </a>
               </li>
             </ul>
           </footer>
