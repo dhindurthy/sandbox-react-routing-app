@@ -11,11 +11,12 @@ function Landing(props) {
         <article className="mini-jumbotron">
           <p>
             Now you are entitled to have many questions which might include the
-            following like - What about him? What are his qualifications? What
-            is his experience with the many various technologies? What services
-            does he provide?
+            following like - What about him? What are his qualifications and
+            experience with the many various technologies? Is he open to
+            utilizing the acquired skills to make web a better place, if so,
+            what all services are provided?
           </p>
-          <Link to="/services">All About It</Link>
+          <Link to="/services">Everything you need to know</Link>
           <span style={{ float: "right" }}> #dhindurthy</span>
         </article>
         <article className="mini-jumbotron">
