@@ -23,6 +23,7 @@ $body-background-2: rgba(244, 244, 248, 1);
     display: flex;
     line-height: 1.5;
     width: 100%;
+    
   }
   
   fieldset {
@@ -54,10 +55,12 @@ $body-background-2: rgba(244, 244, 248, 1);
   .input-component, .textarea-component {
     display: flex;
     flex-direction: column;
-    // align-items: center;
     margin: 1em;
     input {
       margin-left: 2em;
+    }
+    #uname {
+      margin-left: 2.85em;
     }
   }
   .follow-me-section {
@@ -74,6 +77,20 @@ $body-background-2: rgba(244, 244, 248, 1);
     li {
       padding:0;
       margin: 0.5em;
+    }
+    a {
+      color: $text-color;
+      margin: 0;
+    }
+    a:hover{
+      cursor: pointer;
+      color:$nav-color;
+      background-color: $heading-color;
+    }
+    a:focus{
+      color:$nav-color;
+      background-color: $heading-color;
+      outline: 1px solid  $nav-color  !important;
     }
   }
 }

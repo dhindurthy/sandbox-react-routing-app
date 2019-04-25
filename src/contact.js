@@ -8,9 +8,9 @@ class Contact extends React.Component {
       unameValue: "",
       unameError: "",
       unameInvalid: false,
-      pwdValue: "",
-      pwdError: "",
-      pwdInvalid: false,
+      emailValue: "",
+      emailError: "",
+      emailInvalid: false,
       subValue: "",
       subError: "",
       subInvalid: false,
@@ -18,8 +18,8 @@ class Contact extends React.Component {
     };
     this.onUnameChange = this.onUnameChange.bind(this);
     this.onUnameBlur = this.onUnameBlur.bind(this);
-    this.onPwdChange = this.onPwdChange.bind(this);
-    this.onPwdBlur = this.onPwdBlur.bind(this);
+    this.onEmailChange = this.onEmailChange.bind(this);
+    this.onEmailBlur = this.onEmailBlur.bind(this);
     this.onSubChange = this.onSubChange.bind(this);
     this.onSubBlur = this.onSubBlur.bind(this);
     this.onMatterChange = this.onMatterChange.bind(this);
@@ -47,23 +47,21 @@ class Contact extends React.Component {
       });
     }
   };
-  onPwdChange(e) {
-    this.setState({ pwdValue: e.target.value });
+  onEmailChange(e) {
+    this.setState({ emailValue: e.target.value });
   }
-  onPwdBlur = e => {
+  onEmailBlur = e => {
     const value = e.target.value;
     this.setState({
-      pwdError: "",
-      pwdInvalid: false
+      emailError: "",
+      emailInvalid: false
     });
     if (value.length === 0) {
       this.setState({
-        pwdError: "Password empty, please enter something",
-        pwdInvalid: true
+        emailError: "Password empty, please enter something",
+        emailInvalid: true
       });
-    } else if (
-      !value.match("^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[@.]).{5,}$")
-    ) {
+    } else if (!value.match("^(?=.*?[a-z])(?=.*?[@.]).{5,}$")) {
       /**
        * At least one upper case english letter, (?=.*?[A-Z])
         At least one lower case english letter, (?=.*?[a-z])
@@ -71,8 +69,8 @@ class Contact extends React.Component {
         At least one special character, (?=.*?[@])
        */
       this.setState({
-        pwdError: "Email has wrong format.",
-        pwdInvalid: true
+        emailError: "Email has wrong format.",
+        emailInvalid: true
       });
     }
   };
@@ -101,43 +99,21 @@ class Contact extends React.Component {
   onMatterChange(e) {
     this.setState({ matterValue: e.target.value });
   }
-  onMatterBlur = e => {
-    // const value = e.target.value;
-    // this.setState({
-    //   subError: "",
-    //   subInvalid: false
-    // });
-    // if (value.length === 0) {
-    //   this.setState({
-    //     subError: "Subject field is empty, please enter something",
-    //     subInvalid: true
-    //   });
-    // } else if (!value.match("[A-Za-z]+")) {
-    //   this.setState({
-    //     subError: "Subject has wrong format, please enter only letters",
-    //     subInvalid: true
-    //   });
-    // }
-  };
+  onMatterBlur = e => {};
   onClick = e => {
     e.preventDefault();
-    // if (
-    //   this.state.unameValue === "level" &&
-    //   this.state.pwdValue === "Access123"
-    // ) {
-    //   this.setState({
-    //     result: "Email sent successful!"
-    //   });
-    // } else {
-    //   this.setState({
-    //     result: "Sign in failed! Wrong combination of username/password."
-    //   });
-    // }
+    //send an email to my email id
+    window.open(
+      "mailto:dhirajindurthy@gmail.com?subject=" +
+        this.state.subValue +
+        "&body=" +
+        this.state.matterValue
+    );
   };
   render() {
     const isEnabled =
       this.state.unameValue.length > 0 &&
-      this.state.pwdValue.length > 0 &&
+      // this.state.emailValue.length > 0 &&
       this.state.subValue.length > 0;
     return (
       <section className="contact-page">
@@ -154,16 +130,16 @@ class Contact extends React.Component {
               isError={this.state.unameError}
               ariaInvalid={this.state.unameInvalid}
             />
-            <Input
-              id="pwd"
+            {/* <Input
+              id="email"
               label="Email"
               type="email"
-              inputValue={this.state.pwdValue}
-              onChange={this.onPwdChange}
-              onBlur={this.onPwdBlur}
-              isError={this.state.pwdError}
-              ariaInvalid={this.state.pwdInvalid}
-            />
+              inputValue={this.state.emailValue}
+              onChange={this.onEmailChange}
+              onBlur={this.onEmailBlur}
+              isError={this.state.emailError}
+              ariaInvalid={this.state.emailInvalid}
+            /> */}
             <Input
               id="sub"
               label="Subject"
@@ -182,7 +158,7 @@ class Contact extends React.Component {
                 onChange={this.onMatterChange}
                 onBlur={this.onMatterBlur}
                 rows="10"
-                columns="200"
+                columns="100"
               />
             </div>
             <button

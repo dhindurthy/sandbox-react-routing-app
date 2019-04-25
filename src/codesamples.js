@@ -3,8 +3,6 @@ import React from "react";
 function Codesamples(props) {
   return (
     <section className="codesamples-page">
-      {/* <h5>Only codesampels literally</h5>
-      <h6>Iframes(mostly), codeblocks(~) Anything want to share</h6> */}
       <iframe
         width="400"
         height="300"

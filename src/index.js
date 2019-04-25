@@ -6,6 +6,7 @@ import Services from "./services";
 import Codesamples from "./codesamples";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./stlye.scss";
+import "./landing.scss";
 import "./contact.scss";
 import "./services.scss";
 
@@ -69,14 +70,6 @@ function App() {
                   Gist
                 </a>
               </li>
-              {/* <li>
-                <a
-                  role="menuitem"
-                  href="https://linkedin.com/in/dhiraj-indurthy-43b747183"
-                >
-                  LinkedIn
-                </a>
-              </li> */}
               <li>
                 <a
                   role="menuitem"
