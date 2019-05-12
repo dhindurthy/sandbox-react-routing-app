@@ -12,9 +12,22 @@ $body-background-2: rgba(244, 244, 248, 1);
 // font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.25rem;
   line-height: 1.5;
-  background-image: url("./matrix-terminal-new-2.jpg");
+  background-image: url("./background-evening-chicago.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.landing-hello {
+  text-align:center;
+  font-size: 3em;
+  color: $nav-color;
+  span {
+    font-size: 1.125em;
+    font-weight:900;
+    &:hover {
+      color: $heading-color;
+    }
+  }
+  // color: $body-background-1;
 }
 body{  
   margin: 0 auto;

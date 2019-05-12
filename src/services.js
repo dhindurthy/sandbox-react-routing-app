@@ -6,14 +6,13 @@ function Services(props) {
       <meta name="description" content="Your meta description goes here" />
       <h2>About</h2>
       <p>
-        This is a Master's Degree graduate who self taught programming language
-        for building User Interfaces. Also, excelled in the same to a state
-        where any kind of web content can be handled including retail,
-        eductaional, financial, service provider websites. Skilled with over 7
-        years of experience in building, editing and optimizing websites.
-        Additionally, very passionate about making a website accessible to show
-        love and care for all users by providing extra help in case of
-        disabilities. Visit the{" "}
+        This is a self taught programmer who is also a Master's Degree graduate.
+        Excelled in building User Interfaces to a state where any kind of web
+        content can be handled including retail, eductaional, financial, small
+        business websites. Skilled with over 7 years of experience involving
+        building, editing and optimizing websites. Additionally, very passionate
+        about Web Accessibility to show love and care for all users by providing
+        extra help in case of disabilities. Visit the{" "}
         <a
           className="inline-link"
           href="https://linkedin.com/in/dhiraj-indurthy-43b747183"

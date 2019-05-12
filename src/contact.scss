@@ -7,7 +7,7 @@ $body-background-2: rgba(244, 244, 248, 1);
 
 .contact-page {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;//space-around;
   align-items: center;
   flex-direction:column;
   width: 100%;
@@ -92,5 +92,19 @@ $body-background-2: rgba(244, 244, 248, 1);
       background-color: $heading-color;
       outline: 1px solid  $nav-color  !important;
     }
+  }
+
+  dl{
+    margin-top: 0;
+    display: flex;
+  }
+
+  dt{
+    // font-size:1.25em;
+    display: none;
+  }
+
+  dd {
+    font-size:1.25em;
   }
 }

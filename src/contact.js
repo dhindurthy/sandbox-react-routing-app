@@ -103,21 +103,22 @@ class Contact extends React.Component {
   onClick = e => {
     e.preventDefault();
     //send an email to my email id
-    window.open(
-      "mailto:dhirajindurthy@gmail.com?subject=" +
-        this.state.subValue +
-        "&body=" +
-        this.state.matterValue
-    );
+    // window.open(
+    //   "mailto:dhirajindurthy@gmail.com?subject=" +
+    //     this.state.subValue +
+    //     "&body=" +
+    //     this.state.matterValue
+    // );
+    // location.href=
   };
   render() {
-    const isEnabled =
-      this.state.unameValue.length > 0 &&
-      // this.state.emailValue.length > 0 &&
-      this.state.subValue.length > 0;
+    // const isEnabled =
+    //   this.state.unameValue.length > 0 &&
+    //   // this.state.emailValue.length > 0 &&
+    //   this.state.subValue.length > 0;
     return (
       <section className="contact-page">
-        <form>
+        {/* <form>
           <fieldset>
             <legend>Contact Me</legend>
             <Input
@@ -130,16 +131,6 @@ class Contact extends React.Component {
               isError={this.state.unameError}
               ariaInvalid={this.state.unameInvalid}
             />
-            {/* <Input
-              id="email"
-              label="Email"
-              type="email"
-              inputValue={this.state.emailValue}
-              onChange={this.onEmailChange}
-              onBlur={this.onEmailBlur}
-              isError={this.state.emailError}
-              ariaInvalid={this.state.emailInvalid}
-            /> */}
             <Input
               id="sub"
               label="Subject"
@@ -166,13 +157,17 @@ class Contact extends React.Component {
               disabled={!isEnabled}
               onClick={this.onClick}
               className={!isEnabled ? "disabled" : ""}
-            >
+            > 
               Send Email
             </button>
           </fieldset>
-        </form>
+        </form> */}
+        <dl>
+          <dt>Email ID</dt>
+          <dd>dhirajindurthy@gmail.com</dd>
+        </dl>
         <section className="follow-me-section">
-          <h3>You can also follow me at:</h3>
+          <h3>You can follow me at:</h3>
           <ul className="follow-me">
             <li>
               <a

@@ -29,6 +29,11 @@ $body-background-2: rgba(244, 244, 248, 1);
     background-color: $heading-color;
     outline: 1px solid  $nav-color  !important;
   }
+  .inline-link{
+    padding: 0.05em;
+    padding-right: 0.25em;
+    padding-left: 0.25em;
+  }
   .familiar-services-sections{
     display: flex;
     justify-content: space-around;

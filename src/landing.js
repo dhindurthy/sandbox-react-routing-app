@@ -5,7 +5,7 @@ function Landing(props) {
   return (
     <section className="landing-page">
       <h1 className="landing-hello">
-        Hello, this is Dhiraj Indurthy, a programmer.
+        Hello, this is <span>Dhiraj Indurthy</span>, a programmer.
       </h1>
       <section className="quick-view-articles">
         <article className="mini-jumbotron">
