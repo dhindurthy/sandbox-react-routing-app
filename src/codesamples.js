@@ -4,7 +4,7 @@ function Codesamples(props) {
   return (
     <section className="codesamples-page">
       <iframe
-        width="400"
+        width="500"
         height="300"
         scrolling="yes"
         title="simple-angular-todo-app"
@@ -22,7 +22,7 @@ function Codesamples(props) {
         <a href="https://codepen.io">CodePen</a>.
       </iframe>
       <iframe
-        width="400"
+        width="500"
         height="300"
         scrolling="yes"
         title="simple-angular-todo-app"
@@ -40,7 +40,7 @@ function Codesamples(props) {
         <a href="https://codepen.io">CodePen</a>.
       </iframe>
       <iframe
-        width="400"
+        width="500"
         height="300"
         scrolling="yes"
         title="simple-angular-todo-app"
@@ -58,7 +58,7 @@ function Codesamples(props) {
         <a href="https://codepen.io">CodePen</a>.
       </iframe>
       <iframe
-        width="400"
+        width="500"
         height="300"
         scrolling="yes"
         title="simple-angular-todo-app"
@@ -76,7 +76,7 @@ function Codesamples(props) {
         <a href="https://codepen.io">CodePen</a>.
       </iframe>
       <iframe
-        width="400"
+        width="500"
         height="300"
         scrolling="yes"
         title="simple-angular-todo-app"
@@ -94,7 +94,7 @@ function Codesamples(props) {
         <a href="https://codepen.io">CodePen</a>.
       </iframe>
       <iframe
-        width="400"
+        width="500"
         height="300"
         scrolling="yes"
         title="simple-angular-todo-app"
@@ -112,7 +112,7 @@ function Codesamples(props) {
         <a href="https://codepen.io">CodePen</a>.
       </iframe>
       <iframe
-        width="400"
+        width="500"
         height="300"
         scrolling="yes"
         title="simple-angular-todo-app"
@@ -130,7 +130,7 @@ function Codesamples(props) {
         <a href="https://codepen.io">CodePen</a>.
       </iframe>
       <iframe
-        width="400"
+        width="500"
         height="300"
         scrolling="yes"
         title="simple-angular-todo-app"
@@ -148,7 +148,7 @@ function Codesamples(props) {
         <a href="https://codepen.io">CodePen</a>.
       </iframe>
       <iframe
-        width="400"
+        width="500"
         height="300"
         scrolling="yes"
         title="simple-angular-todo-app"
@@ -166,7 +166,7 @@ function Codesamples(props) {
         <a href="https://codepen.io">CodePen</a>.
       </iframe>
       <iframe
-        width="400"
+        width="500"
         height="300"
         scrolling="yes"
         title="simple-angular-todo-app"

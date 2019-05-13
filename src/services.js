@@ -9,10 +9,10 @@ function Services(props) {
         This is a self taught programmer who is also a Master's Degree graduate.
         Excelled in building User Interfaces to a state where any kind of web
         content can be handled including retail, eductaional, financial, small
-        business websites. Skilled with over 7 years of experience involving
+        business websites. Skilled with over 7 years of experience that involves
         building, editing and optimizing websites. Additionally, very passionate
-        about Web Accessibility to show love and care for all users by providing
-        extra help in case of disabilities. Visit the{" "}
+        about Web Accessibility to show love for all users by providing extra
+        help in case of disabilities. Visit the{" "}
         <a
           className="inline-link"
           href="https://linkedin.com/in/dhiraj-indurthy-43b747183"
@@ -25,31 +25,33 @@ function Services(props) {
       </p>
       <section class="familiar-services-sections">
         <section>
-          <h2>Familiarity with Technologies</h2>
+          <h2>Technological Acquaintance</h2>
           <dl>
             <dt>Programming Languages</dt>
-            <dd>JavaScript, HTML, CSS, CSS3</dd>
+            <dd>JavaScript, HTML, CSS</dd>
             <dt>JavaScript Frameworks</dt>
-            <dd>Ember JS, React JS, Angular JS</dd>
-            <dt>Web Standards</dt>
-            <dd>ES6, HTML 5, Web Content Accessibility Guidelines (WCAG)</dd>
+            <dd>EmberJS, ReactJS, AngularJS</dd>
+            <dt>Web Accessibility</dt>
+            <dd>WCAG, WAI ARIA</dd>
+            {/* Web Content Accessibility Guidelines  */}
+            <dt>Content Management System</dt>
+            <dd>WordPress</dd>
           </dl>
         </section>
         <section>
           <h2>Services</h2>
           <ul>
-            <li>User Interface development</li>
+            <li>User Interface Development</li>
             <li>Website Consultation</li>
-            <li>Website Edit</li>
           </ul>
 
-          <h2>Speciality Services</h2>
+          <h2>Specialization Services</h2>
           <dl>
-            <dt>Web Accessibility Development(following WCAG).</dt>
+            <dt>Web Accessibility Development</dt>
             <dd>Screen Reader Compatibility</dd>
             <dd>Keyboard Navigation</dd>
             <dd>Color Contrast and Text Zoom</dd>
-            <dt>Auditing Websites for Accessibility</dt>
+            <dt>Auditing Website Accessibility</dt>
             <dd>Tests to detect the Accessibility violations</dd>
           </dl>
         </section>

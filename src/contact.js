@@ -1,5 +1,6 @@
 import React from "react";
 import Input from "./input";
+import Nodemailer from "nodemailer";
 
 class Contact extends React.Component {
   constructor(props) {
@@ -101,7 +102,7 @@ class Contact extends React.Component {
   }
   onMatterBlur = e => {};
   onClick = e => {
-    e.preventDefault();
+    // e.preventDefault();
     //send an email to my email id
     // window.open(
     //   "mailto:dhirajindurthy@gmail.com?subject=" +
@@ -110,6 +111,41 @@ class Contact extends React.Component {
     //     this.state.matterValue
     // );
     // location.href=
+    console.log("inside it");
+    let nodemailer = Nodemailer;
+    let transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
+      auth: {
+        type: "OAuth2",
+        user: "dhirajreddy.454.com",
+        //pass: 'reddyUBS@434',
+        accessToken: "ya29.Xx_XX0xxxxx-xX0X0XxXXxXxXXXxX0x" //need to genrate one
+        //https://ciunkos.com/creating-contact-forms-with-nodemailer-and-react
+      }
+    });
+
+    let mailOptions = {
+      from: "youremail@gmail.com",
+      to: "dhirajreddy.454@gmail.com",
+      subject: "Sending Email using Node.js",
+      text: "That was easy!"
+    };
+    const sendMail = message => {
+      return new Promise((resolve, reject) => {
+        console.log("doing it");
+        transporter.sendMail(mailOptions, function(error, info) {
+          if (error) {
+            console.log("doing error it");
+            console.log(error);
+          } else {
+            console.log("Email sent: " + info.response);
+          }
+        });
+      });
+    };
+    sendMail(mailOptions);
   };
   render() {
     // const isEnabled =
@@ -151,21 +187,47 @@ class Contact extends React.Component {
                 rows="10"
                 columns="100"
               />
-            </div>
-            <button
-              type="submit"
-              disabled={!isEnabled}
-              onClick={this.onClick}
-              className={!isEnabled ? "disabled" : ""}
-            > 
-              Send Email
-            </button>
-          </fieldset>
+            </div> */}
+        <button
+          type="submit"
+          // disabled={!isEnabled}
+          onClick={this.onClick}
+          // className={!isEnabled ? "disabled" : ""}
+        >
+          Send Email
+        </button>
+        {/* </fieldset>
         </form> */}
         <dl>
-          <dt>Email ID</dt>
-          <dd>dhirajindurthy@gmail.com</dd>
+          <dt>Email me at</dt>
+          {/* <dd>dhirajindurthy@gmail.com</dd> */}
+          <dd className="follow-me">
+            <a
+              href="https://linkedin.com/in/dhiraj-indurthy-43b747183"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </dd>
         </dl>
+        {/* <div
+          className="LI-profile-badge"
+          data-version="v1"
+          data-size="medium"
+          data-locale="en_US"
+          data-type="horizontal"
+          data-theme="dark"
+          data-vanity="dhiraj-indurthy-43b747183"
+        >
+          <a
+            className="LI-simple-link"
+            href="https://www.linkedin.com/in/dhiraj-indurthy-43b747183?trk=profile-badge"
+          >
+            Dhiraj Indurthy
+          </a>
+        </div> */}
+
         <section className="follow-me-section">
           <h3>You can follow me at:</h3>
           <ul className="follow-me">
@@ -187,15 +249,9 @@ class Contact extends React.Component {
                 Gist
               </a>
             </li>
-            <li>
-              <a
-                href="https://linkedin.com/in/dhiraj-indurthy-43b747183"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-            </li>
+            {/* <li>
+              
+            </li> */}
             <li>
               <a
                 href="https://codesandbox.io/u/dhindurthy"
