@@ -120,7 +120,6 @@ class Contact extends React.Component {
       auth: {
         type: "OAuth2",
         user: "dhirajreddy.454.com",
-        //pass: 'reddyUBS@434',
         accessToken: "ya29.Xx_XX0xxxxx-xX0X0XxXXxXxXXXxX0x" //need to genrate one
         //https://ciunkos.com/creating-contact-forms-with-nodemailer-and-react
       }
@@ -188,14 +187,14 @@ class Contact extends React.Component {
                 columns="100"
               />
             </div> */}
-        <button
+        {/* <button
           type="submit"
-          // disabled={!isEnabled}
+          disabled={!isEnabled}
           onClick={this.onClick}
-          // className={!isEnabled ? "disabled" : ""}
+          className={!isEnabled ? "disabled" : ""}
         >
           Send Email
-        </button>
+        </button> */}
         {/* </fieldset>
         </form> */}
         <dl>
@@ -207,7 +206,7 @@ class Contact extends React.Component {
               rel="noopener noreferrer"
               target="_blank"
             >
-              LinkedIn
+              <i class="fab fa-linkedin" />
             </a>
           </dd>
         </dl>
