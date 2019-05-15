@@ -5,7 +5,7 @@ function Services(props) {
     <section className="services-page">
       <meta name="description" content="Your meta description goes here" />
       <h2>About</h2>
-      <p>
+      <p tabindex="0">
         This is a self taught programmer who is also a Master's Degree graduate.
         Excelled in building User Interfaces to a state where any kind of web
         content can be handled including retail, eductaional, financial, small
@@ -24,7 +24,7 @@ function Services(props) {
         profile for more details.
       </p>
       <section class="familiar-services-sections">
-        <section>
+        <section tabindex="0">
           <h2>Technological Acquaintance</h2>
           <dl>
             <dt>Programming Languages</dt>
@@ -38,7 +38,7 @@ function Services(props) {
             <dd>WordPress</dd>
           </dl>
         </section>
-        <section>
+        <section tabindex="0">
           <h2>Services</h2>
           <ul>
             <li>User Interface Development</li>

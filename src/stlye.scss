@@ -50,7 +50,7 @@ body{
   a:focus{
     color: $heading-color;
     background-color: $nav-color;
-    outline: 1px solid  $heading-color !important;
+    outline: 0.15rem solid  $heading-color !important;
   }
   h1,h2,h3,h4,h5,h6 {
     color:$heading-color
@@ -121,7 +121,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   iframe{
-    border: 1px solid $nav-color;
+    border: 0.05rem solid $nav-color;
     // width: 45%;
     margin: 0.5rem;
   }

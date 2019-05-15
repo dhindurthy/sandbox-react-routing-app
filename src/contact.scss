@@ -93,7 +93,7 @@ $body-background-2: rgba(244, 244, 248, 1);
     a:focus{
       color:$nav-color;
       background-color: $heading-color;
-      outline: 1px solid  $nav-color  !important;
+      outline: 0.15rem solid  $nav-color  !important;
     }
   }
 
