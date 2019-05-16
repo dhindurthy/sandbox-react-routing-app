@@ -197,19 +197,7 @@ class Contact extends React.Component {
         </button> */}
         {/* </fieldset>
         </form> */}
-        <dl>
-          <dt>Email me at</dt>
-          {/* <dd>dhirajindurthy@gmail.com</dd> */}
-          <dd className="follow-me">
-            <a
-              href="https://linkedin.com/in/dhiraj-indurthy-43b747183"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin" />
-            </a>
-          </dd>
-        </dl>
+
         {/* <div
           className="LI-profile-badge"
           data-version="v1"
@@ -228,7 +216,21 @@ class Contact extends React.Component {
         </div> */}
 
         <section className="follow-me-section">
-          <h3>You can follow me at:</h3>
+          <dl>
+            <dt>
+              <h3>You can email me through:</h3>
+            </dt>
+            <dd className="follow-me">
+              <a
+                href="https://linkedin.com/in/dhiraj-indurthy-43b747183"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin" />
+              </a>
+            </dd>
+          </dl>
+          <h3>You can also follow me at:</h3>
           <ul className="follow-me">
             <li>
               <a

@@ -32,7 +32,7 @@ function Services(props) {
             <dt>JavaScript Frameworks</dt>
             <dd>EmberJS, ReactJS, AngularJS</dd>
             <dt>Web Accessibility</dt>
-            <dd>WCAG, WAI ARIA</dd>
+            <dd>WCAG 2.0, WAI ARIA</dd>
             {/* Web Content Accessibility Guidelines  */}
             <dt>Content Management System</dt>
             <dd>WordPress</dd>
@@ -45,7 +45,7 @@ function Services(props) {
             <li>Website Consultation</li>
           </ul>
 
-          <h2>Specialization Services</h2>
+          <h2>Specialization</h2>
           <dl>
             <dt>Web Accessibility Development</dt>
             <dd>Screen Reader Compatibility</dd>

@@ -1,5 +1,5 @@
 {
-  "name": "react-routing-app",
+  "name": "dhindurthy-app",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -21,10 +21,5 @@
     "build": "next build",
     "start": "next start"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
