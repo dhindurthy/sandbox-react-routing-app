@@ -4,6 +4,7 @@ $nav-color: rgba(254, 215, 102, 1);
 $text-color: rgba(0, 159, 183, 1);
 $body-background-1: rgba(230, 230, 234, 1);
 $body-background-2: rgba(244, 244, 248, 1);
+$body-background-3: rgb(255, 255, 255);
 
 .contact-page {
   display: flex;
@@ -11,6 +12,7 @@ $body-background-2: rgba(244, 244, 248, 1);
   align-items: center;
   flex-direction:column;
   width: 100%;
+  background-color: $body-background-3;
   label {
     color:$text-color;
   }
@@ -84,6 +86,7 @@ $body-background-2: rgba(244, 244, 248, 1);
     a {
       color: $text-color;
       margin: 0;
+      font-size: 1.25em;
     }
     a:hover{
       cursor: pointer;
@@ -94,6 +97,16 @@ $body-background-2: rgba(244, 244, 248, 1);
       color:$nav-color;
       background-color: $heading-color;
       outline: 0.15rem solid  $nav-color  !important;
+    }
+    .linkedin-a, .linkedin-a:hover, .linkedin-a:focus {
+      color: $text-color;
+      margin: 0;
+      font-size: 1.25em;
+      background-color: $body-background-3;
+      // outline: 0.15rem solid  $heading-color  !important;
+      span {
+        display: none;
+      }
     }
   }
 

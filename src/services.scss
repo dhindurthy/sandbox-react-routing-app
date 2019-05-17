@@ -3,18 +3,23 @@ $nav-color: rgba(254, 215, 102, 1);
 $text-color: rgba(0, 159, 183, 1);
 $body-background-1: rgba(230, 230, 234, 1);
 $body-background-2: rgba(244, 244, 248, 1);
+$body-background-3: rgb(255, 255, 255);
+$font-color-service: rgba(49, 54, 56, 1);
 
 .services-page {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: $nav-color;
+  background-color: $body-background-3;
+  color: $text-color;//$font-color-service;
   ul {
     list-style: none;
   }
   p{
     text-align: justify;//center;
     font-size:1.5em;
+    
+    // color: rgba(43, 48, 58, 1);
   }
   a {
     color: $text-color;
@@ -53,6 +58,6 @@ $body-background-2: rgba(244, 244, 248, 1);
   }
 
   dd {
-    font-size:1em;
+    font-size:1.2em;
   }
 }

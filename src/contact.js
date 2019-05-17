@@ -1,6 +1,8 @@
 import React from "react";
 import Input from "./input";
-import Nodemailer from "nodemailer";
+// import Nodemailer from "nodemailer";
+//"mail":"0.2.3"
+//"node-mailer":"6.1.1"
 
 class Contact extends React.Component {
   constructor(props) {
@@ -102,6 +104,21 @@ class Contact extends React.Component {
   }
   onMatterBlur = e => {};
   onClick = e => {
+    // var mail = require('mail').Mail({
+    //   host: 'smtp.gmail.com',
+    //   username: 'dhirajreddy.454@gmail.com',
+    //   password: 'reddyUBS@434'
+    // });
+    // mail.message({
+    //   from: 'sender@example.net',
+    //   to: ['dhirajreddy.454@gmail.com'],
+    //   subject: 'Hello from Node.JS'
+    // })
+    // .body('Node speaks SMTP!')
+    // .send(function(err) {
+    //   if (err) throw err;
+    //   console.log('Sent!');
+    // });
     // e.preventDefault();
     //send an email to my email id
     // window.open(
@@ -110,41 +127,37 @@ class Contact extends React.Component {
     //     "&body=" +
     //     this.state.matterValue
     // );
-    // location.href=
-    console.log("inside it");
-    let nodemailer = Nodemailer;
-    let transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
-      auth: {
-        type: "OAuth2",
-        user: "dhirajreddy.454.com",
-        accessToken: "ya29.Xx_XX0xxxxx-xX0X0XxXXxXxXXXxX0x" //need to genrate one
-        //https://ciunkos.com/creating-contact-forms-with-nodemailer-and-react
-      }
-    });
-
-    let mailOptions = {
-      from: "youremail@gmail.com",
-      to: "dhirajreddy.454@gmail.com",
-      subject: "Sending Email using Node.js",
-      text: "That was easy!"
-    };
-    const sendMail = message => {
-      return new Promise((resolve, reject) => {
-        console.log("doing it");
-        transporter.sendMail(mailOptions, function(error, info) {
-          if (error) {
-            console.log("doing error it");
-            console.log(error);
-          } else {
-            console.log("Email sent: " + info.response);
-          }
-        });
-      });
-    };
-    sendMail(mailOptions);
+    //
+    // let nodemailer = Nodemailer;
+    // let transporter = nodemailer.createTransport({
+    //   host: "smtp.gmail.com",
+    //   port: 465,
+    //   secure: true,
+    //   auth: {
+    //     type: "OAuth2",
+    //     user: "dhirajreddy.454.com",
+    //     accessToken: "ya29.Xx_XX0xxxxx-xX0X0XxXXxXxXXXxX0x" //need to genrate one
+    //     //https://ciunkos.com/creating-contact-forms-with-nodemailer-and-react
+    //   }
+    // });
+    // let mailOptions = {
+    //   from: "youremail@gmail.com",
+    //   to: "dhirajreddy.454@gmail.com",
+    //   subject: "Sending Email using Node.js",
+    //   text: "That was easy!"
+    // };
+    // const sendMail = mailOptions => {
+    //   return new Promise((resolve, reject) => {
+    //     transporter.sendMail(mailOptions, function(error, info) {
+    //       if (error) {
+    //         console.log(error);
+    //       } else {
+    //         console.log("Email sent: " + info.response);
+    //       }
+    //     });
+    //   });
+    // };
+    // sendMail(mailOptions);
   };
   render() {
     // const isEnabled =
@@ -218,19 +231,21 @@ class Contact extends React.Component {
         <section className="follow-me-section">
           <dl>
             <dt>
-              <h3>You can email me through:</h3>
+              <h2>You can email me via LinkedIN:</h2>
             </dt>
             <dd className="follow-me">
               <a
                 href="https://linkedin.com/in/dhiraj-indurthy-43b747183"
                 rel="noopener noreferrer"
                 target="_blank"
+                className="linkedin-a"
               >
-                <i class="fab fa-linkedin" />
+                <span>my-linkedin</span>
+                <i className="fab fa-linkedin" />
               </a>
             </dd>
           </dl>
-          <h3>You can also follow me at:</h3>
+          <h2>You can also follow me at:</h2>
           <ul className="follow-me">
             <li>
               <a

@@ -49,18 +49,19 @@ function App() {
             <Route path="/" exact={true} component={Landing} />
           </main>
           <footer>
-            <ul role="menubar" className="navigation footer-list">
-              <li>
-                <a
-                  role="menuitem"
-                  href="https://github.com/dhindurthy"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  GitHub
-                </a>
-              </li>
-              <li>
+            <nav>
+              <ul role="menubar" className="navigation footer-list">
+                <li>
+                  <a
+                    role="menuitem"
+                    href="https://github.com/dhindurthy"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                </li>
+                {/* <li>
                 <a
                   role="menuitem"
                   href="https://gist.github.com/dhindurthy"
@@ -69,28 +70,29 @@ function App() {
                 >
                   Gist
                 </a>
-              </li>
-              <li>
-                <a
-                  role="menuitem"
-                  href="https://codesandbox.io/u/dhindurthy"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  CodeSandbox
-                </a>
-              </li>
-              <li>
-                <a
-                  role="menuitem"
-                  href="https://codepen.io/dhindurthy/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  CodePen
-                </a>
-              </li>
-            </ul>
+              </li> */}
+                <li>
+                  <a
+                    role="menuitem"
+                    href="https://codesandbox.io/u/dhindurthy"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    CodeSandbox
+                  </a>
+                </li>
+                <li>
+                  <a
+                    role="menuitem"
+                    href="https://codepen.io/dhindurthy/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    CodePen
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </footer>
         </section>
       </section>

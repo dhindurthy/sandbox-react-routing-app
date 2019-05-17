@@ -3,12 +3,12 @@ import React from "react";
 function Services(props) {
   return (
     <section className="services-page">
-      <meta name="description" content="Your meta description goes here" />
+      {/* <meta name="description" content="Your meta description goes here" /> */}
       <h2>About</h2>
       <p tabindex="0">
-        This is a self taught programmer who is also a Master's Degree graduate.
+        This is a self taught programmer and a Master's Degree graduate.
         Excelled in building User Interfaces to a state where any kind of web
-        content can be handled including retail, eductaional, financial, small
+        content can be handled including retail, educational, financial, small
         business websites. Skilled with over 7 years of experience that involves
         building, editing and optimizing websites. Additionally, very passionate
         about Web Accessibility to show love for all users by providing extra

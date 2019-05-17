@@ -17,7 +17,7 @@ function Landing(props) {
             what all services are provided?
           </p>
           <Link to="/services">Everything you need to know</Link>
-          <span style={{ float: "right" }}> #dhindurthy</span>
+          <span className="tagname"> #dhindurthy</span>
         </article>
         <article className="mini-jumbotron">
           <p>
