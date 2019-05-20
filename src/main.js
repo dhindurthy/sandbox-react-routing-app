@@ -1,21 +1,20 @@
 import React from "react";
 import { BrowserRouter as Route, Link } from "react-router-dom";
 
-function Landing(props) {
+function Main(props) {
   return (
-    <section className="landing-page">
-      <h1 className="landing-hello">
+    <section className="main-page">
+      <h1 className="main-hello">
         Hello, this is <span>Dhiraj Indurthy</span>, a web programmer.
       </h1>
       <section className="quick-view-articles">
         <article className="mini-jumbotron">
           <p tabindex="0">
-            Now you are entitled to have many questions including the following
-            like - What about him? What are his qualifications and experience
-            with the countless technologies? How is he special from other web
-            developers?
+            Now you are entitled to have many questions like - What about him?
+            What are his qualifications and experience with the countless
+            technologies? How is he special from other web developers?
           </p>
-          <Link to="/services">Everything you need to know</Link>
+          <Link to="/services">Everything you should know</Link>
           <span className="tagname"> #dhindurthy</span>
         </article>
         <article className="mini-jumbotron">
@@ -32,4 +31,4 @@ function Landing(props) {
   );
 }
 
-export default Landing;
+export default Main;

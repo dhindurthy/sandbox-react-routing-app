@@ -3,13 +3,6 @@ $nav-color: rgba(254, 215, 102, 1);
 $text-color: rgba(71, 115, 170, 1);
 $body-background-3: rgb(255, 255, 255);
 
-// $heading-color: #205493;
-// $nav-color: ;
-// $text-color: ;
-// $body-background-1: ;
-// $body-background-2: ;
-// $body-background-3: ;
-
 .App {
   font-family: 'Oswald', sans-serif;
 // font-family: 'Roboto Condensed', sans-serif; //for navs
@@ -24,7 +17,7 @@ $body-background-3: rgb(255, 255, 255);
 }
 body{  
   margin: 0 auto;
-  background-color:black;//$body-background-2;
+  background-color:$text-color;
   color: $text-color;
   section:focus, p:focus, dl:focus, ul:focus {
     outline-width: 0.25rem;

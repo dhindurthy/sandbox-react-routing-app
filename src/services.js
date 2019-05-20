@@ -15,8 +15,12 @@ function Services(props) {
         small business websites. Skilled with over 7 years of experience that
         involves building, editing and optimizing websites. Additionally, very
         passionate about Web Accessibility to show love for all users by
-        providing extra help in case of disabilities including those users who
-        have visual, auditory, motor or cognitive disabilities. Visit the{" "}
+        providing extra help regardless of disability type or severity of
+        impairment. This includes users who have visual, auditory, motor or
+        cognitive disabilities.
+      </p>
+      <p>
+        Please visit the{" "}
         <a
           className="inline-link"
           href="https://linkedin.com/in/dhiraj-indurthy-43b747183"

@@ -1,17 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Contact from "./contact";
-import Landing from "./landing";
+import Main from "./main";
 import Services from "./services";
 import Codesamples from "./codesamples";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./stlye.scss";
-import "./landing.scss";
+import "./main.scss";
 import "./services.scss";
 import "./codesamples.scss";
 import "./contact.scss";
 
 function App() {
+  const onArrowHit = e => {
+    // console.log(e.keyCode);
+    if (e.keyCode === 39) {
+      e.target.parentElement.nextSibling.firstElementChild.focus();
+    }
+    if (e.keyCode === 37) {
+      e.target.parentElement.previousSibling.firstElementChild.focus();
+    }
+  };
+
   return (
     <Router>
       <section className="App">
@@ -20,22 +30,26 @@ function App() {
             <nav>
               <ul role="menubar" className="navigation nav-list">
                 <li>
-                  <Link role="menuitem" to="/landing">
-                    DI
+                  <Link role="menuitem" to="/main" onKeyDown={onArrowHit}>
+                    Home
                   </Link>
                 </li>
                 <li>
-                  <Link role="menuitem" to="/services">
-                    Work
+                  <Link role="menuitem" to="/services" onKeyDown={onArrowHit}>
+                    Profile
                   </Link>
                 </li>
                 <li>
-                  <Link role="menuitem" to="/codesamples">
+                  <Link
+                    role="menuitem"
+                    to="/codesamples"
+                    onKeyDown={onArrowHit}
+                  >
                     Code
                   </Link>
                 </li>
                 <li>
-                  <Link role="menuitem" to="/contact">
+                  <Link role="menuitem" to="/contact" onKeyDown={onArrowHit}>
                     Contact
                   </Link>
                 </li>
@@ -43,11 +57,11 @@ function App() {
             </nav>
           </header>
           <main>
-            <Route path="/landing" component={Landing} />
+            <Route path="/main" component={Main} />
             <Route path="/services" component={Services} />
             <Route path="/codesamples" component={Codesamples} />
             <Route path="/contact" component={Contact} />
-            <Route path="/" exact={true} component={Landing} />
+            <Route path="/" exact={true} component={Main} />
           </main>
           <footer>
             <nav>
@@ -58,6 +72,7 @@ function App() {
                     href="https://github.com/dhindurthy"
                     rel="noopener noreferrer"
                     target="_blank"
+                    onKeyDown={onArrowHit}
                   >
                     GitHub
                   </a>
@@ -78,6 +93,7 @@ function App() {
                     href="https://codesandbox.io/u/dhindurthy"
                     rel="noopener noreferrer"
                     target="_blank"
+                    onKeyDown={onArrowHit}
                   >
                     CodeSandbox
                   </a>
@@ -88,6 +104,7 @@ function App() {
                     href="https://codepen.io/dhindurthy/"
                     rel="noopener noreferrer"
                     target="_blank"
+                    onKeyDown={onArrowHit}
                   >
                     CodePen
                   </a>
