@@ -7,8 +7,9 @@ import Codesamples from "./codesamples";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./stlye.scss";
 import "./landing.scss";
-import "./contact.scss";
 import "./services.scss";
+import "./codesamples.scss";
+import "./contact.scss";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
               <ul role="menubar" className="navigation nav-list">
                 <li>
                   <Link role="menuitem" to="/landing">
-                    di
+                    DI
                   </Link>
                 </li>
                 <li>

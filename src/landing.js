@@ -9,22 +9,23 @@ function Landing(props) {
       </h1>
       <section className="quick-view-articles">
         <article className="mini-jumbotron">
-          <p>
-            Now you are entitled to have many questions which might include the
-            following like - What about him? What are his qualifications and
-            experience with the many various technologies? Is he open to
-            utilizing the acquired skills to make web a better place, if so,
-            what all services are provided?
+          <p tabindex="0">
+            Now you are entitled to have many questions including the following
+            like - What about him? What are his qualifications and experience
+            with the countless technologies? How is he special from other web
+            developers?
           </p>
           <Link to="/services">Everything you need to know</Link>
           <span className="tagname"> #dhindurthy</span>
         </article>
         <article className="mini-jumbotron">
-          <p>
-            You can find some of the various code samples I have built over
-            time.
+          <p tabindex="0">
+            You can see some of the assorted{" "}
+            <Link to="/codesamples" className="inline-codesample-link">
+              Code Samples
+            </Link>{" "}
+            I have built over time.
           </p>
-          <Link to="/codesamples">Code Samples</Link>
         </article>
       </section>
     </section>

@@ -166,6 +166,7 @@ class Contact extends React.Component {
     //   this.state.subValue.length > 0;
     return (
       <section className="contact-page">
+        <h1 className="main-page-heading">Contact Form and Public Profiles</h1>
         {/* <form>
           <fieldset>
             <legend>Contact Me</legend>
@@ -245,7 +246,7 @@ class Contact extends React.Component {
               </a>
             </dd>
           </dl>
-          <h2>You can also follow me at:</h2>
+          <h2>You can also follow me and view more code samples at:</h2>
           <ul className="follow-me">
             <li>
               <a

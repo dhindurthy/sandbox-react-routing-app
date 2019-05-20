@@ -1,9 +1,6 @@
-
-$heading-color: rgba(254, 74, 73, 1);
+$heading-color: rgba(4, 107, 153, 1);
 $nav-color: rgba(254, 215, 102, 1);
-$text-color: rgba(0, 159, 183, 1);
-$body-background-1: rgba(230, 230, 234, 1);
-$body-background-2: rgba(244, 244, 248, 1);
+$text-color: rgba(71, 115, 170, 1);
 $body-background-3: rgb(255, 255, 255);
 
 .contact-page {
@@ -12,30 +9,23 @@ $body-background-3: rgb(255, 255, 255);
   align-items: center;
   flex-direction:column;
   width: 100%;
-  background-color: $body-background-3;
+  background-color: rgba(71, 115, 170, 0.75);//#4773aa; //rgba(71, 115, 170, 0.75);
   label {
     color:$text-color;
-  }
-  .fab {
-    font-size: 3.5em;
   }
   .error-message {
     color: $heading-color;
     font-size: 1rem;
   }
-  
   form {
     display: flex;
     line-height: 1.5;
     width: 100%;
-    
   }
-  
   fieldset {
     width: 100%;
     border: none;
   }
-  
   button {
     border-radius: 0.5em;
     border: none;
@@ -50,13 +40,11 @@ $body-background-3: rgb(255, 255, 255);
   button:hover {
     opacity: 0.85;
   }
-  
   button.disabled {
     color: black;
     background-color: #ece4e2;
     cursor: not-allowed;
   }
-  
   .input-component, .textarea-component {
     display: flex;
     flex-direction: column;
@@ -73,6 +61,9 @@ $body-background-3: rgb(255, 255, 255);
         margin:0;
         padding: 0;
       }
+      h2 {
+        color: $body-background-3;
+      }
   }
   .follow-me {
     list-style: none;
@@ -82,47 +73,48 @@ $body-background-3: rgb(255, 255, 255);
     li {
       padding:0;
       margin: 0.5em;
+      font-family: 'Oswald', sans-serif;
     }
     a {
-      color: $text-color;
+      color: $body-background-3;
       margin: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
       font-size: 1.25em;
+      border-radius: 0.5rem;
     }
     a:hover{
       cursor: pointer;
-      color:$nav-color;
-      background-color: $heading-color;
+      color: $nav-color;
     }
     a:focus{
       color:$nav-color;
-      background-color: $heading-color;
-      outline: 0.15rem solid  $nav-color  !important;
+      outline: 0.15rem dashed  $nav-color  !important;
     }
     .linkedin-a, .linkedin-a:hover, .linkedin-a:focus {
       color: $text-color;
-      margin: 0;
-      font-size: 1.25em;
+      margin: 0.5rem;
       background-color: $body-background-3;
-      // outline: 0.15rem solid  $heading-color  !important;
       span {
         display: none;
       }
     }
   }
-
+  .fab {
+    font-size: 3em;
+  }
   dl{
     margin-top: 0;
     display: flex;
   }
-
   dt{
     // font-size:1.25em;
     display: flex;
     align-items: center;
   }
-
   dd {
     font-size:1.5em;
   }
-  
 }
