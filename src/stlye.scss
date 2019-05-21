@@ -20,7 +20,7 @@ body{
   background-color:$text-color;
   color: $text-color;
   section:focus, p:focus, dl:focus, ul:focus {
-    outline-width: 0.25rem;
+    outline-width: 0.15rem;
     outline-style: dashed;
     outline-color: $nav-color;
   }
@@ -43,7 +43,7 @@ body{
   display: grid;
   height: 100vh;
   grid-template-columns: 100%; 
-  grid-template-rows: 10% 80% 10% ;
+  grid-template-rows: 11% 78% 11% ;
   grid-template-areas: 
    "header header header header header"
    "main main main main main"
@@ -58,15 +58,18 @@ ul.navigation {
   padding: 0;
   padding-bottom: 0.25rem; //exception
   margin: 0;
+  background-color: $heading-color;
+  font-size: 1.5rem;
   li {
+    background-color: inherit;
     flex: 0 0 auto;
     a{
       text-decoration: none;
       padding-bottom: 0.5rem;//exception
     }
   }
-
   a, .inline-codesample-link{
+    // background-color: inherit;
     color:$nav-color;
     margin: 0.5rem;
     // margin-right: 0;//exception to make the menu top smaller
@@ -82,8 +85,6 @@ ul.navigation {
     background-color: $nav-color;
     outline: 0.25rem solid  $heading-color !important;
   }
-  background-color: $heading-color;
-  font-size: 1.5rem;
 }
 header {
   grid-area: header;
@@ -114,6 +115,6 @@ footer {
   height: 97.5%;
   padding: 0.75rem;
   font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 600;
+  // font-weight: 600;
   background-color:$body-background-3;
 }

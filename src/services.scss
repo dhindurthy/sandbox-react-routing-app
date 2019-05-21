@@ -13,7 +13,7 @@ $body-background-3: rgb(255, 255, 255);
     list-style: none;
   }
   p{
-    text-align: justify;//center;
+    // text-align: justify;//center;
     font-size:1.2em;
   }
   a {
@@ -26,7 +26,7 @@ $body-background-3: rgb(255, 255, 255);
   }
   a:focus{
     color:$nav-color;
-    outline: 0.15rem solid  $nav-color  !important;
+    outline: 0.15rem dashed  $nav-color  !important;
   }
   .inline-link{
     padding: 0.05em;
@@ -41,8 +41,10 @@ $body-background-3: rgb(255, 255, 255);
     width: 100%;
   }
   h1,h2,h3 {
+    margin-top: 0.35em;
     margin-bottom: 0;
     color: $body-background-3;
+    font-weight: normal;
   }
   p, dl,ul {
     margin-top: 0;

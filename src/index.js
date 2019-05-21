@@ -29,18 +29,29 @@ function App() {
           <header>
             <nav>
               <ul role="menubar" className="navigation nav-list">
-                <li>
-                  <Link role="menuitem" to="/main" onKeyDown={onArrowHit}>
-                    Home
+                <li role="presentation">
+                  <Link
+                    tabIndex="0"
+                    role="menuitem"
+                    to="/main"
+                    onKeyDown={onArrowHit}
+                  >
+                    Main
                   </Link>
                 </li>
-                <li>
-                  <Link role="menuitem" to="/services" onKeyDown={onArrowHit}>
+                <li role="presentation">
+                  <Link
+                    tabIndex="0"
+                    role="menuitem"
+                    to="/services"
+                    onKeyDown={onArrowHit}
+                  >
                     Profile
                   </Link>
                 </li>
-                <li>
+                <li role="presentation">
                   <Link
+                    tabIndex="0"
                     role="menuitem"
                     to="/codesamples"
                     onKeyDown={onArrowHit}
@@ -48,7 +59,7 @@ function App() {
                     Code
                   </Link>
                 </li>
-                <li>
+                <li role="presentation">
                   <Link role="menuitem" to="/contact" onKeyDown={onArrowHit}>
                     Contact
                   </Link>
@@ -66,7 +77,7 @@ function App() {
           <footer>
             <nav>
               <ul role="menubar" className="navigation footer-list">
-                <li>
+                <li role="presentation">
                   <a
                     role="menuitem"
                     href="https://github.com/dhindurthy"
@@ -77,7 +88,7 @@ function App() {
                     GitHub
                   </a>
                 </li>
-                {/* <li>
+                {/* <li role="presentation">
                 <a
                   role="menuitem"
                   href="https://gist.github.com/dhindurthy"
@@ -87,7 +98,7 @@ function App() {
                   Gist
                 </a>
               </li> */}
-                <li>
+                <li role="presentation">
                   <a
                     role="menuitem"
                     href="https://codesandbox.io/u/dhindurthy"
@@ -98,7 +109,7 @@ function App() {
                     CodeSandbox
                   </a>
                 </li>
-                <li>
+                <li role="presentation">
                   <a
                     role="menuitem"
                     href="https://codepen.io/dhindurthy/"

@@ -232,7 +232,7 @@ class Contact extends React.Component {
         <section className="follow-me-section">
           <dl>
             <dt>
-              <h2>You can email me via LinkedIN:</h2>
+              <h2>Email me via LinkedIN:</h2>
             </dt>
             <dd className="follow-me">
               <a
@@ -246,9 +246,9 @@ class Contact extends React.Component {
               </a>
             </dd>
           </dl>
-          <h2>You can also follow me and view more code samples at:</h2>
+          <h2>Follow me and view more code samples at:</h2>
           <ul className="follow-me">
-            <li>
+            <li role="presentation">
               <a
                 href="https://github.com/dhindurthy"
                 rel="noopener noreferrer"
@@ -257,7 +257,7 @@ class Contact extends React.Component {
                 GitHub
               </a>
             </li>
-            <li>
+            <li role="presentation">
               <a
                 href="https://gist.github.com/dhindurthy"
                 rel="noopener noreferrer"
@@ -269,7 +269,7 @@ class Contact extends React.Component {
             {/* <li>
               
             </li> */}
-            <li>
+            <li role="presentation">
               <a
                 href="https://codesandbox.io/u/dhindurthy"
                 rel="noopener noreferrer"
@@ -278,7 +278,7 @@ class Contact extends React.Component {
                 CodeSandbox
               </a>
             </li>
-            <li>
+            <li role="presentation">
               <a
                 href="https://codepen.io/dhindurthy/"
                 rel="noopener noreferrer"

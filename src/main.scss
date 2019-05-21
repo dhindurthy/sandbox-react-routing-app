@@ -17,7 +17,7 @@ $body-background-3: rgb(255, 255, 255);
     span {
       font-size: 1.125em;
       font-weight:900;
-      text-decoration: underline;
+      // text-decoration: underline;
     }
   }
   .quick-view-articles{
@@ -31,7 +31,7 @@ $body-background-3: rgb(255, 255, 255);
     color: $body-background-3;
     p {
       // font-family: 'Roboto Condensed', sans-serif;
-      font-size: 1.2em;
+      font-size: 1em;
       margin: 0.25rem;
     }
     padding: 0.75rem;
@@ -61,9 +61,18 @@ $body-background-3: rgb(255, 255, 255);
       outline: 0.15 solid  $nav-color  !important;
     }
 
-    .inline-codesample-link {
-      font-family: 'Oswald', sans-serif;
+    .inline-code-link {
+      // font-family: 'Oswald', sans-serif;
       font-size: 1em;
+    }
+    .inline-all-link {
+      // font-family: 'Oswald', sans-serif;
+      font-size: 1em;
+    }
+    .inline-code-link:focus, .inline-all-link:focus {
+      outline-width: 0.15rem;
+      outline-style: dashed;
+      outline-color: $nav-color;
     }
   }
 }
