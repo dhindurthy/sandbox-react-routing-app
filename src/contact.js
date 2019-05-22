@@ -247,7 +247,7 @@ class Contact extends React.Component {
             </dd>
           </dl>
           <h2>Follow me and view more code samples at:</h2>
-          <ul className="follow-me">
+          <ul className="follow-me follow-me-menu">
             <li role="presentation">
               <a
                 href="https://github.com/dhindurthy"

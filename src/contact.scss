@@ -66,6 +66,9 @@ $body-background-3: rgb(255, 255, 255);
         font-weight: normal;
       }
   }
+  .follow-me-menu {
+    flex-flow: wrap;
+  }
   .follow-me {
     list-style: none;
     display: flex;
@@ -73,18 +76,15 @@ $body-background-3: rgb(255, 255, 255);
     padding:0;
     li {
       padding:0;
-      margin: 0.5em;
+      margin: 0.35em;
       font-family: 'Oswald', sans-serif;
-    }
-    a {
-      color: $body-background-3;
-      margin: 0;
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-      padding-right: 0;
-      padding-left: 0;
-      font-size: 1.25em;
-      border-radius: 0.5rem;
+      a {
+        color: $body-background-3;
+        margin: 0;
+        padding: 0.15rem;
+        font-size: 1.25em;
+        // border-radius: 0.5rem;
+      }
     }
     a:hover{
       cursor: pointer;
@@ -100,7 +100,8 @@ $body-background-3: rgb(255, 255, 255);
       background-color: $body-background-3;
       padding-right: 0.75rem;
       padding-left: 0.75rem;
-      padding-bottom: 0;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
       span {
         display: none;
       }
