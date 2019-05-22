@@ -8,53 +8,64 @@ $body-background-3: rgb(255, 255, 255);
   align-items: center;
   flex-direction: column;
   color: $body-background-3;
-  background-color: rgba(71, 115, 170, 0.75);//#4773aa; //rgba(71, 115, 170, 0.75);
+  background-color: rgba(
+    71,
+    115,
+    170,
+    0.75
+  ); //#4773aa; //rgba(71, 115, 170, 0.75);
   ul {
     list-style: none;
   }
-  p{
+  p {
     // text-align: justify;//center;
-    font-size:1.2em;
+    font-size: 1.2em;
   }
   a {
     color: $text-color;
     margin: 0;
   }
-  a:hover{
+  a:hover {
     cursor: pointer;
-    color:$nav-color;
+    color: $nav-color;
   }
-  a:focus{
-    color:$nav-color;
-    outline: 0.15rem dashed  $nav-color  !important;
+  a:focus {
+    color: $nav-color;
+    outline: 0.15rem dashed $nav-color !important;
   }
-  .inline-link{
+  .inline-link {
     padding: 0.05em;
     padding-right: 0.25em;
     padding-left: 0.25em;
     color: $body-background-3;
   }
-  .familiar-services-sections{
+  .familiar-services-sections {
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
     width: 100%;
   }
-  h1,h2,h3 {
+  h1,
+  h2,
+  h3 {
     margin-top: 0.35em;
     margin-bottom: 0;
     color: $body-background-3;
     font-weight: normal;
   }
-  p, dl,ul {
+
+  p,
+  dl,
+  ul {
     margin-top: 0;
   }
 
-  dt, li {
-    font-size:1.275em;
+  dt,
+  li {
+    font-size: 1.275em;
   }
 
   dd {
-    font-size:1.2em;
+    font-size: 1.2em;
   }
 }

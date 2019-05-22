@@ -4,22 +4,25 @@ $text-color: rgba(71, 115, 170, 1);
 $body-background-3: rgb(255, 255, 255);
 
 .App {
-  font-family: 'Oswald', sans-serif;
-// font-family: 'Roboto Condensed', sans-serif; //for navs
+  font-family: "Oswald", sans-serif;
+  // font-family: 'Roboto Condensed', sans-serif; //for navs
   font-size: 1.25rem;
   line-height: 1.5;
   background-image: url("./background-evening-chicago.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.main-page-heading{
+.main-page-heading {
   display: none;
 }
-body{  
+body {
   margin: 0 auto;
-  background-color:$text-color;
+  background-color: $text-color;
   color: $text-color;
-  section:focus, p:focus, dl:focus, ul:focus {
+  section:focus,
+  p:focus,
+  dl:focus,
+  ul:focus {
     outline-width: 0.15rem;
     outline-style: dashed;
     outline-color: $nav-color;
@@ -27,10 +30,15 @@ body{
   ul {
     padding: 0.1rem;
   }
-  
-  h1,h2,h3,h4,h5,h6 {
-    color:$heading-color;
-    font-family: 'Oswald', sans-serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $heading-color;
+    font-family: "Oswald", sans-serif;
   }
   ::selection {
     background: $nav-color; /* WebKit/Blink Browsers */
@@ -42,12 +50,12 @@ body{
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 100%; 
-  grid-template-rows: 11% 78% 11% ;
-  grid-template-areas: 
-   "header header header header header"
-   "main main main main main"
-   "footer footer footer footer footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 12% 76% 12%;
+  grid-template-areas:
+    "header header header header header"
+    "main main main main main"
+    "footer footer footer footer footer";
 
   // align-items: center;
   justify-content: center;
@@ -63,27 +71,30 @@ ul.navigation {
   li {
     background-color: inherit;
     flex: 0 0 auto;
-    a{
+    a {
       text-decoration: none;
-      padding-bottom: 0.5rem;//exception
+      padding-bottom: 0.5rem; //exception
     }
   }
-  a, .inline-codesample-link{
+  a,
+  .inline-codesample-link {
     // background-color: inherit;
-    color:$nav-color;
+    color: $nav-color;
     margin: 0.5rem;
     // margin-right: 0;//exception to make the menu top smaller
     padding: 0.25rem; //any chnage to this should follow up with ul.navigation-li-a
   }
-  a:hover, .inline-codesample-link:hover{
+  a:hover,
+  .inline-codesample-link:hover {
     cursor: pointer;
     color: $heading-color;
     background-color: $nav-color;
   }
-  a:focus, .inline-codesample-link:focus{
+  a:focus,
+  .inline-codesample-link:focus {
     color: $heading-color;
     background-color: $nav-color;
-    outline: 0.25rem solid  $heading-color !important;
+    outline: 0.25rem solid $heading-color !important;
   }
 }
 header {
@@ -95,7 +106,7 @@ header {
     justify-content: flex-end;
   }
 }
-main{
+main {
   grid-area: main;
   display: flex;
   align-items: center;
@@ -106,15 +117,17 @@ footer {
   align-items: center;
   justify-content: flex-start;
   ul.footer-list {
-    justify-content: flex-start;  
+    justify-content: flex-start;
   }
 }
 
-.services-page, .codesamples-page, .contact-page {
+.services-page,
+.codesamples-page,
+.contact-page {
   overflow-y: auto;
   height: 97.5%;
   padding: 0.75rem;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   // font-weight: 600;
-  background-color:$body-background-3;
+  background-color: $body-background-3;
 }
