@@ -12,13 +12,13 @@ $body-background-3: rgb(255, 255, 255);
     71,
     115,
     170,
-    0.80
+    0.90
   ); //#4773aa; //rgba(71, 115, 170, 0.75);
   ul {
     list-style: none;
   }
   p {
-    // text-align: justify;//center;
+    text-align: left;
     font-size: 1.2em;
   }
   a {
@@ -39,11 +39,24 @@ $body-background-3: rgb(255, 255, 255);
     padding-left: 0.25em;
     color: $body-background-3;
   }
+  .about-section {
+    max-width: 50%;
+    text-align: center;
+  }
+  
   .familiar-services-sections {
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
     width: 100%;
+  }
+  @media only screen and (max-width: 600px) { //600px and below
+    .about-section {
+      max-width: 95%;
+    }
+    familiar-services-sections {
+      justify-content: center;
+    }
   }
   h1,
   h2,
