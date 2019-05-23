@@ -5,7 +5,6 @@ function Codesamples(props) {
     <section className="codesamples-page">
       <h1 className="main-page-heading">Assorted Code Samples</h1>
       <iframe
-        style={{ width: "48.5%" }}
         src="https://codesandbox.io/embed/olmo6735kq?fontsize=14"
         title="react-grid-component"
         className="sandbox-iframe"
@@ -14,20 +13,18 @@ function Codesamples(props) {
       <iframe
         src="https://codesandbox.io/embed/yvm9vxqx09?fontsize=14"
         title="accessible-login-form"
-        style={{ width: "48.5%" }}
         className="sandbox-iframe"
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
       />
       <iframe
         src="https://codesandbox.io/embed/p5nzxk9y4j?fontsize=14"
         title="todo-app-react"
-        style={{ width: "48.5%" }}
         className="sandbox-iframe"
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
       />
       <iframe
+        className="codepen"
         height="350"
-        style={{ width: "48.5%" }}
         scrolling="no"
         title="simple-angular-todo-app"
         src="//codepen.io/dhindurthy/embed/OxYRmw/?height=350&theme-id=0&default-tab=js,result"
@@ -45,8 +42,8 @@ function Codesamples(props) {
       </iframe>
 
       <iframe
+        className="codepen"
         height="350"
-        style={{ width: "48.5%" }}
         scrolling="no"
         title="accessible-angular-form"
         src="//codepen.io/dhindurthy/embed/Jreogj/?height=350&theme-id=0&default-tab=html,result"
@@ -64,8 +61,8 @@ function Codesamples(props) {
       </iframe>
 
       <iframe
+        className="codepen"
         height="350"
-        style={{ width: "48.5%" }}
         scrolling="no"
         title="sticky-header-footer"
         src="//codepen.io/dhindurthy/embed/pWXWrg/?height=350&theme-id=0&default-tab=css,result"
@@ -83,8 +80,8 @@ function Codesamples(props) {
       </iframe>
 
       <iframe
+        className="codepen"
         height="350"
-        style={{ width: "48.5%" }}
         scrolling="no"
         title="drag-and-drop-object"
         src="//codepen.io/dhindurthy/embed/qRvyYm/?height=350&theme-id=0&default-tab=js,result"
@@ -102,8 +99,8 @@ function Codesamples(props) {
       </iframe>
 
       <iframe
+        className="codepen"
         height="350"
-        style={{ width: "48.5%" }}
         scrolling="no"
         title="mobile-modal-edit-item"
         src="//codepen.io/dhindurthy/embed/NNGKgL/?height=350&theme-id=0&default-tab=html,result"
@@ -121,8 +118,8 @@ function Codesamples(props) {
       </iframe>
 
       <iframe
+        className="codepen"
         height="350"
-        style={{ width: "48.5%" }}
         scrolling="no"
         title="aria-label-labelledby"
         src="//codepen.io/dhindurthy/embed/aLVPYQ/?height=350&theme-id=0&default-tab=html,result"
@@ -140,8 +137,8 @@ function Codesamples(props) {
       </iframe>
 
       <iframe
+        className="codepen"
         height="350"
-        style={{ width: "48.5%" }}
         scrolling="no"
         title="mobile-modal-add-item"
         src="//codepen.io/dhindurthy/embed/oxjvdZ/?height=350&theme-id=0&default-tab=html,result"
@@ -159,8 +156,8 @@ function Codesamples(props) {
       </iframe>
 
       <iframe
+        className="codepen"
         height="350"
-        style={{ width: "48.5%" }}
         scrolling="no"
         title="highcharts-bubble-drilldown"
         src="//codepen.io/dhindurthy/embed/JJRaNq/?height=350&theme-id=0&default-tab=js,result"
@@ -178,8 +175,8 @@ function Codesamples(props) {
       </iframe>
 
       <iframe
+        className="codepen"
         height="350"
-        style={{ width: "48.5%" }}
         scrolling="no"
         title="tabs-component"
         src="//codepen.io/dhindurthy/embed/GNMjga/?height=350&theme-id=0&default-tab=css,result"
@@ -195,8 +192,8 @@ function Codesamples(props) {
       </iframe>
 
       <iframe
+        className="codepen"
         height="350"
-        style={{ width: "48.5%" }}
         scrolling="no"
         title="accordion-web"
         src="//codepen.io/dhindurthy/embed/VmKwOr/?height=350&theme-id=0&default-tab=css,result"

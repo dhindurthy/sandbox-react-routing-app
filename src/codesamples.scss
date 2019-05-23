@@ -5,8 +5,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   iframe{
-    // border: 0.05rem solid $nav-color;
-    // width: 45%;
     margin: 0.5rem;
   }
   .codepen {
@@ -16,12 +14,18 @@
     justify-content: center; 
     margin: 0.5em 0; 
     padding: 1em;
+    width:48.5%;
   }
   .sandbox-iframe {
-    width:100%; 
+    width:48.5%; 
     height:350px; 
     border:0; 
     border-radius: 4px; 
     overflow:hidden;
+  }
+  @media only screen and (max-width: 600px) { //600px and below
+    .sandbox-iframe, .codepen {
+      width:90%;
+    }
   }
 }
