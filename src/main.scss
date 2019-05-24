@@ -24,9 +24,13 @@ $body-background-3: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
   }
-  
+  @media only screen and (max-width: 700px) {
+    article.mini-jumbotron {
+      height: 100%;
+    }
+  }
   article.mini-jumbotron {
-    height: 100%;
+    // height: 100%;
     background-color:$heading-color;
     color: $body-background-3;
     p {

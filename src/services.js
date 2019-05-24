@@ -42,7 +42,7 @@ function Services(props) {
             profile for more details regarding technology stacks and
             institutions dealt with in the past. Please contact me if you think
             I would be a good match to team up for your project involving any of
-            the mentioned services.
+            the mentioned services and the specializations.
           </p>
           {/* <h2>Technological Acquaintance</h2>
           <dl tabindex="0">
