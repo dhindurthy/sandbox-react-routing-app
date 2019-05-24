@@ -4,9 +4,9 @@ $text-color: rgba(71, 115, 170, 1);
 $body-background-3: rgb(255, 255, 255);
 
 .services-page {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
   color: $body-background-3;
   background-color: rgba(
     71,
@@ -40,19 +40,39 @@ $body-background-3: rgb(255, 255, 255);
     color: $body-background-3;
   }
   .about-section {
-    max-width: 50%;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+   
+    .about-paras {
+      max-width: 45%;
+    }
+    .collab-paras {
+      max-width: 45%;
+    }
   }
   
   .familiar-services-sections {
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
-    width: 100%;
+    text-align: left;
+    .technologies {
+      text-align: left;
+    }
+    .services {
+      text-align: left;
+    }
   }
-  @media only screen and (max-width: 600px) { //600px and below
+  @media only screen and (max-width: 900px) { //600px and below
     .about-section {
-      max-width: 95%;
+      .about-paras {
+        max-width: 95%;
+      }
+      .collab-paras {
+        max-width: 95%;
+      }
     }
     familiar-services-sections {
       justify-content: center;
