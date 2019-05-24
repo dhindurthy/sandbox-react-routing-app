@@ -44,7 +44,7 @@ function Services(props) {
             I would be a good match to team up for your project involving any of
             the mentioned services.
           </p>
-          <h2>Technological Acquaintance</h2>
+          {/* <h2>Technological Acquaintance</h2>
           <dl tabindex="0">
             <dt>Programming Languages</dt>
             <dd>JavaScript, HTML, CSS</dd>
@@ -52,22 +52,15 @@ function Services(props) {
             <dd>EmberJS, ReactJS, AngularJS</dd>
             <dt>Web Accessibility</dt>
             <dd>WCAG 2.0, WAI ARIA</dd>
-            {/* Web Content Accessibility Guidelines  */}
             <dt>Content Management System</dt>
             <dd>WordPress</dd>
-          </dl>
-        </section>
-      </section>
-      <section className="familiar-services-sections">
-        <section className="technologies">
+          </dl> */}
           <h2>Services</h2>
           <ul tabindex="0">
             <li>User Interface Implementation</li>
             <li>Testing and Maintaining Websites</li>
             <li>Website Consultation</li>
           </ul>
-        </section>
-        <section className="services">
           <h2>Specialization</h2>
           <dl tabindex="0">
             <dt>Web Accessibility Implementation</dt>
@@ -77,6 +70,27 @@ function Services(props) {
             <dt>Auditing Website Accessibility</dt>
             <dd>Testing for Accessibility Violations</dd>
           </dl>
+        </section>
+      </section>
+      <section className="familiar-services-sections">
+        <section className="technologies">
+          {/* <h2>Services</h2>
+          <ul tabindex="0">
+            <li>User Interface Implementation</li>
+            <li>Testing and Maintaining Websites</li>
+            <li>Website Consultation</li>
+          </ul> */}
+        </section>
+        <section className="services">
+          {/* <h2>Specialization</h2>
+          <dl tabindex="0">
+            <dt>Web Accessibility Implementation</dt>
+            <dd>Screen Reader Compatibility</dd>
+            <dd>Keyboard Navigation</dd>
+            <dd>Color Contrast, Text Zoom etc.</dd>
+            <dt>Auditing Website Accessibility</dt>
+            <dd>Testing for Accessibility Violations</dd>
+          </dl> */}
         </section>
       </section>
     </section>
