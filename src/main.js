@@ -5,7 +5,7 @@ function Main(props) {
   return (
     <section className="main-page">
       <h1 className="main-hello">
-        Hello, I'm <span>Dhiraj Indurthy</span>, web engineer.
+        Hello, I'm <span>Dhiraj Indurthy</span>, website engineer.
       </h1>
       <section className="quick-view-articles">
         <article className="mini-jumbotron">
