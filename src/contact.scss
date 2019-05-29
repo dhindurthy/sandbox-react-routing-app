@@ -4,6 +4,9 @@ $text-color: rgba(71, 115, 170, 1);
 $body-background-3: rgb(255, 255, 255);
 
 .contact-page {
+  .main-page-heading {
+    display: none;
+  }
   display: flex;
   justify-content: center;//space-around;
   align-items: center;
