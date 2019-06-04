@@ -20,7 +20,7 @@ function Main(props) {
           <span className="tagname"> #dhindurthy</span>
         </article>
         <article className="mini-jumbotron">
-          <p tabindex="0">
+          <p tabIndex="0">
             You can see some of the assorted{" "}
             <Link to="/codesamples" className="inline-code-link">
               Code Samples

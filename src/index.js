@@ -60,7 +60,12 @@ function App() {
                   </Link>
                 </li>
                 <li role="presentation">
-                  <Link role="menuitem" to="/contact" onKeyDown={onArrowHit}>
+                  <Link
+                    tabIndex="0"
+                    role="menuitem"
+                    to="/contact"
+                    onKeyDown={onArrowHit}
+                  >
                     Contact
                   </Link>
                 </li>

@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "./input";
+import Accordion from "./accordion";
 // import Nodemailer from "nodemailer";
 //"mail":"0.2.3"
 //"node-mailer":"6.1.1"
@@ -7,287 +7,117 @@ import Input from "./input";
 class Contact extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      unameValue: "",
-      unameError: "",
-      unameInvalid: false,
-      emailValue: "",
-      emailError: "",
-      emailInvalid: false,
-      subValue: "",
-      subError: "",
-      subInvalid: false,
-      matterValue: ""
-    };
-    this.onUnameChange = this.onUnameChange.bind(this);
-    this.onUnameBlur = this.onUnameBlur.bind(this);
-    this.onEmailChange = this.onEmailChange.bind(this);
-    this.onEmailBlur = this.onEmailBlur.bind(this);
-    this.onSubChange = this.onSubChange.bind(this);
-    this.onSubBlur = this.onSubBlur.bind(this);
-    this.onMatterChange = this.onMatterChange.bind(this);
-    this.onMatterBlur = this.onMatterBlur.bind(this);
-    this.onClick = this.onClick.bind(this);
+    this.state = {};
   }
-  onUnameChange(e) {
-    this.setState({ unameValue: e.target.value });
-  }
-  onUnameBlur = e => {
-    const value = e.target.value;
-    this.setState({
-      unameError: "",
-      unameInvalid: false
-    });
-    if (value.length === 0) {
-      this.setState({
-        unameError: "User name field is empty, please enter something",
-        unameInvalid: true
-      });
-    } else if (!value.match("[A-Za-z]+")) {
-      this.setState({
-        unameError: "User name has wrong format, please enter only letters",
-        unameInvalid: true
-      });
-    }
-  };
-  onEmailChange(e) {
-    this.setState({ emailValue: e.target.value });
-  }
-  onEmailBlur = e => {
-    const value = e.target.value;
-    this.setState({
-      emailError: "",
-      emailInvalid: false
-    });
-    if (value.length === 0) {
-      this.setState({
-        emailError: "Password empty, please enter something",
-        emailInvalid: true
-      });
-    } else if (!value.match("^(?=.*?[a-z])(?=.*?[@.]).{5,}$")) {
-      /**
-       * At least one upper case english letter, (?=.*?[A-Z])
-        At least one lower case english letter, (?=.*?[a-z])
-        At least one digit, (?=.*?[0-9])
-        At least one special character, (?=.*?[@])
-       */
-      this.setState({
-        emailError: "Email has wrong format.",
-        emailInvalid: true
-      });
-    }
-  };
 
-  onSubChange(e) {
-    this.setState({ subValue: e.target.value });
-  }
-  onSubBlur = e => {
-    const value = e.target.value;
-    this.setState({
-      subError: "",
-      subInvalid: false
-    });
-    if (value.length === 0) {
-      this.setState({
-        subError: "Subject field is empty, please enter something",
-        subInvalid: true
-      });
-    } else if (!value.match("[A-Za-z]+")) {
-      this.setState({
-        subError: "Subject has wrong format, please enter only letters",
-        subInvalid: true
-      });
-    }
-  };
-  onMatterChange(e) {
-    this.setState({ matterValue: e.target.value });
-  }
-  onMatterBlur = e => {};
-  onClick = e => {
-    // var mail = require('mail').Mail({
-    //   host: 'smtp.gmail.com',
-    //   username: 'dhirajreddy.454@gmail.com',
-    //   password: 'reddyUBS@434'
-    // });
-    // mail.message({
-    //   from: 'sender@example.net',
-    //   to: ['dhirajreddy.454@gmail.com'],
-    //   subject: 'Hello from Node.JS'
-    // })
-    // .body('Node speaks SMTP!')
-    // .send(function(err) {
-    //   if (err) throw err;
-    //   console.log('Sent!');
-    // });
-    // e.preventDefault();
-    //send an email to my email id
-    // window.open(
-    //   "mailto:dhirajindurthy@gmail.com?subject=" +
-    //     this.state.subValue +
-    //     "&body=" +
-    //     this.state.matterValue
-    // );
-    //
-    // let nodemailer = Nodemailer;
-    // let transporter = nodemailer.createTransport({
-    //   host: "smtp.gmail.com",
-    //   port: 465,
-    //   secure: true,
-    //   auth: {
-    //     type: "OAuth2",
-    //     user: "dhirajreddy.454.com",
-    //     accessToken: "ya29.Xx_XX0xxxxx-xX0X0XxXXxXxXXXxX0x" //need to genrate one
-    //     //https://ciunkos.com/creating-contact-forms-with-nodemailer-and-react
-    //   }
-    // });
-    // let mailOptions = {
-    //   from: "youremail@gmail.com",
-    //   to: "dhirajreddy.454@gmail.com",
-    //   subject: "Sending Email using Node.js",
-    //   text: "That was easy!"
-    // };
-    // const sendMail = mailOptions => {
-    //   return new Promise((resolve, reject) => {
-    //     transporter.sendMail(mailOptions, function(error, info) {
-    //       if (error) {
-    //         console.log(error);
-    //       } else {
-    //         console.log("Email sent: " + info.response);
-    //       }
-    //     });
-    //   });
-    // };
-    // sendMail(mailOptions);
-  };
   render() {
-    // const isEnabled =
-    //   this.state.unameValue.length > 0 &&
-    //   // this.state.emailValue.length > 0 &&
-    //   this.state.subValue.length > 0;
     return (
       <section className="contact-page">
         <h1 className="main-page-heading">Contact Form and Public Profiles</h1>
-        {/* <form>
-          <fieldset>
-            <legend>Contact Me</legend>
-            <Input
-              id="uname"
-              label="Name"
-              type="text"
-              inputValue={this.state.unameValue}
-              onChange={this.onUnameChange}
-              onBlur={this.onUnameBlur}
-              isError={this.state.unameError}
-              ariaInvalid={this.state.unameInvalid}
-            />
-            <Input
-              id="sub"
-              label="Subject"
-              type="text"
-              inputValue={this.state.subValue}
-              onChange={this.onSubChange}
-              onBlur={this.onSubBlur}
-              isError={this.state.subError}
-              ariaInvalid={this.state.subInvalid}
-            />
-            <div role="presentation" className="textarea-component">
-              <label htmlFor="matter">Message</label>
-              <textarea
-                id="matter"
-                value={this.state.matterValue}
-                onChange={this.onMatterChange}
-                onBlur={this.onMatterBlur}
-                rows="10"
-                columns="100"
-              />
-            </div> */}
-        {/* <button
-          type="submit"
-          disabled={!isEnabled}
-          onClick={this.onClick}
-          className={!isEnabled ? "disabled" : ""}
-        >
-          Send Email
-        </button> */}
-        {/* </fieldset>
-        </form> */}
-
-        {/* <div
-          className="LI-profile-badge"
-          data-version="v1"
-          data-size="medium"
-          data-locale="en_US"
-          data-type="horizontal"
-          data-theme="dark"
-          data-vanity="dhiraj-indurthy-43b747183"
-        >
-          <a
-            className="LI-simple-link"
-            href="https://www.linkedin.com/in/dhiraj-indurthy-43b747183?trk=profile-badge"
-          >
-            Dhiraj Indurthy
-          </a>
-        </div> */}
-
         <section className="follow-me-section">
-          <dl>
-            <dt>
-              <h2>Email me via LinkedIN:</h2>
-            </dt>
-            <dd className="follow-me">
-              <a
-                href="https://linkedin.com/in/dhiraj-indurthy-43b747183"
-                rel="noopener noreferrer"
-                target="_blank"
-                className="linkedin-a"
-              >
-                <span>my-linkedin</span>
-                <i className="fab fa-linkedin" />
-              </a>
-            </dd>
-          </dl>
-          <h2>Follow me and view more code samples at:</h2>
-          <ul className="follow-me follow-me-menu">
-            <li role="presentation">
-              <a
-                href="https://github.com/dhindurthy"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                GitHub
-              </a>
-            </li>
-            <li role="presentation">
-              <a
-                href="https://gist.github.com/dhindurthy"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Gist
-              </a>
-            </li>
-            {/* <li>
+          <div className="linkedin-link">
+            <h2>Email me via LinkedIN:</h2>
+            <a
+              href="https://linkedin.com/in/dhiraj-indurthy-43b747183"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="linkedin-a"
+            >
+              <span>my-linkedin</span>
+              <i className="fab fa-linkedin" />
+            </a>
+          </div>
+          <div>
+            <h2>Follow me and view more code samples at:</h2>
+            <ul className="follow-me follow-me-menu">
+              <li role="presentation">
+                <a
+                  href="https://github.com/dhindurthy"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li role="presentation">
+                <a
+                  href="https://gist.github.com/dhindurthy"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Gist
+                </a>
+              </li>
+              {/* <li>
               
             </li> */}
-            <li role="presentation">
-              <a
-                href="https://codesandbox.io/u/dhindurthy"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                CodeSandbox
-              </a>
-            </li>
-            <li role="presentation">
-              <a
-                href="https://codepen.io/dhindurthy/"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                CodePen
-              </a>
-            </li>
-          </ul>
+              <li role="presentation">
+                <a
+                  href="https://codesandbox.io/u/dhindurthy"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  CodeSandbox
+                </a>
+              </li>
+              <li role="presentation">
+                <a
+                  href="https://codepen.io/dhindurthy/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  CodePen
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section className="faq">
+          <h2>Frequently Asked Questions:</h2>
+          <Accordion heading="What technologies do I use to build the website?">
+            <dl>
+              <dt>Programming Languages</dt>
+              <dd>JavaScript, HTML, CSS</dd>
+              <dt>JavaScript Frameworks</dt>
+              <dd>EmberJS, ReactJS, AngularJS</dd>
+              <dt>Web Accessibility</dt>
+              <dd>WCAG 2.0, WAI ARIA</dd>
+              <dt>Content Management System</dt>
+              <dd>WordPress</dd>
+            </dl>
+            <p>
+              In addition to the above, I always try t stay abreast of new
+              technologies.
+            </p>
+          </Accordion>
+          <Accordion heading="Do I work with mobile devices?">
+            <p>
+              The website will of course be mobile friendly automatically. Which
+              means, the same website can be viewed on tablet and phone and you
+              can notice the layout adjust seamlessly. However, if you are
+              thinking of mobile application (Apps) that is not the case.
+            </p>
+          </Accordion>
+          <Accordion heading="How would the communication process work?">
+            <p>
+              I will be continuosly communicating with the owner of the website
+              all along the process. It is through email/ phone and video
+              conference/ screen sharing.
+            </p>
+          </Accordion>
+          <Accordion heading="What is the duration and pricing for getting the website up?">
+            <p>
+              It all depends on the project. I am open to have complementary
+              consulation for free to sketch out the project. I have worked on
+              various kinds and sizes of websites so far including small
+              business, educational, financial and retail websites. I have also
+              worked on websites that were driven entirely by data, driven by
+              behaviour of the user and so on.
+            </p>
+          </Accordion>
+          <Accordion heading="What kind of websites have I worked on in the past?">
+            <p>Please visit the above question to know that.</p>
+          </Accordion>
         </section>
       </section>
     );

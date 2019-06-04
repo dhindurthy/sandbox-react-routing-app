@@ -7,66 +7,41 @@ $body-background-3: rgb(255, 255, 255);
   .main-page-heading {
     display: none;
   }
+  h2 {
+    color: $body-background-3;
+    font-weight: normal;
+  }
   display: flex;
-  justify-content: center;//space-around;
-  align-items: center;
-  flex-direction:column;
+  justify-content: space-between;
+  // align-items: center;
+  // flex-direction:column;
   width: 100%;
   background-color: rgba(71, 115, 170, 0.75);//#4773aa; //rgba(71, 115, 170, 0.75);
-  label {
-    color:$text-color;
-  }
-  .error-message {
-    color: $heading-color;
-    font-size: 1rem;
-  }
-  form {
-    display: flex;
-    line-height: 1.5;
-    width: 100%;
-  }
-  fieldset {
-    width: 100%;
-    border: none;
-  }
-  button {
-    border-radius: 0.5em;
-    border: none;
-    color: $nav-color;
-    background-color: $text-color;
-    padding: 0.5em 0.5em;
-    cursor: pointer;
-    font-size: 1.25rem;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 600
-  }
-  button:hover {
-    opacity: 0.85;
-  }
-  button.disabled {
-    color: black;
-    background-color: #ece4e2;
-    cursor: not-allowed;
-  }
-  .input-component, .textarea-component {
-    display: flex;
-    flex-direction: column;
-    margin: 1em;
-    input {
-      margin-left: 2em;
-    }
-    #uname {
-      margin-left: 2.85em;
-    }
-  }
+ 
   .follow-me-section {
       h3 {
         margin:0;
         padding: 0;
       }
-      h2 {
-        color: $body-background-3;
-        font-weight: normal;
+      .linkedin-link {
+        display: flex;
+        align-items: center;
+      }
+      .linkedin-a {
+        color: $text-color;
+        margin: 0.5rem;
+        background-color: $body-background-3;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        span {
+          display: none;
+        }
+      }
+      .linkedin-a:hover, .linkedin-a:focus {
+        color: $text-color;
+        background-color: $nav-color;
       }
   }
   .follow-me-menu {
@@ -97,36 +72,91 @@ $body-background-3: rgb(255, 255, 255);
       color:$nav-color;
       outline: 0.15rem dashed  $nav-color  !important;
     }
-    .linkedin-a {
-      color: $text-color;
-      margin: 0.5rem;
-      background-color: $body-background-3;
-      padding-right: 0.75rem;
-      padding-left: 0.75rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-      span {
-        display: none;
-      }
-    }
-    .linkedin-a:hover, .linkedin-a:focus {
-      color: $text-color;
-      background-color: $nav-color;
-    }
+   
   }
   .fab {
     font-size: 2.5em;
   }
-  dl{
-    margin-top: 0;
-    display: flex;
+  @media only screen and (max-width: 700px) {
+    .faq {
+      max-width: 95%;
+   }
   }
-  dt{
-    // font-size:1.25em;
-    display: flex;
-    align-items: center;
-  }
-  dd {
-    font-size:1.5em;
+  .faq {
+    max-width: 400px;
+   
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      color: rgba(71, 115, 170, 1);
+      margin-bottom: 1rem;
+    }
+    
+    h3 {
+      color: rgba(71, 115, 170, 1);
+    }
+    
+    .acc-button {
+      display: flex;
+      align-content: center;
+      background-color: white;
+      border: 0.01rem solid gray;
+      padding: 0.25rem;
+      z-index: 1;
+      cursor: pointer;
+      color:  rgba(71, 115, 170, 1);
+      // max-width: 85%;
+    }
+    
+    div.acc-contentshow {
+      background-color: white;
+      /* visibility: visible; */
+      display: block;
+      padding: 0.25rem;
+      border: 0.01rem solid black;
+      border-top: none;
+      transition: all 0.25s linear;
+      -webkit-animation: slide-down 0.65s ease-out;
+      -moz-animation: slide-down 0.65s ease-out;
+    }
+    
+    @-webkit-keyframes slide-down {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(-40%);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+      }
+    }
+    @-moz-keyframes slide-down {
+      0% {
+        opacity: 0;
+        -moz-transform: translateY(-40%);
+      }
+      100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+      }
+    }
+    
+    div.acc-contenthidden {
+      /* visibility: hidden; */
+      display: none;
+      opacity: 0;
+      transition: all 0.25s linear;
+    }
+    
+    h3 {
+      margin: 0;
+      padding: 0;
+      margin-left: 2rem;
+    }
+
+    p {
+      
+    }
+    
   }
 }
